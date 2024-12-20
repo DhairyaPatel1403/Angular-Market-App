@@ -1,0 +1,56 @@
+/* Main form container */
+.form-container {
+    border: 1px solid #ccc; /* Subtle border for the container */
+    border-radius: 8px; /* Slightly rounded corners */
+    padding: 20px; /* Adequate padding inside the form */
+    max-width: 400px; /* Limit form width for a clean design */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #fff; /* White background for a clean minimal look */
+}
+
+/* Input Group and Labels */
+.input-group {
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+.form-label {
+    font-size: 1rem; /* Simple font size for labels */
+    color: #333; /* Dark grey color for the labels */
+    display: block; /* Labels should be block elements for alignment */
+    margin-bottom: 5px; /* Small space between label and input */
+}
+
+.form-control {
+    width: 100%; /* Full-width input fields */
+    padding: 10px; /* Padding for better spacing */
+    font-size: 1rem; /* Consistent font size */
+    border: 1px solid #ccc; /* Light grey border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: border-color 0.2s ease-in-out; /* Smooth transition for border color */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Focused border color */
+    outline: none; /* Remove default outline */
+}
+
+/* Error message styling */
+.error-message {
+    color: #dc3545; /* Red text for error messages */
+    font-size: 0.875rem; /* Slightly smaller text for error messages */
+    margin-top: 5px; /* Space between error and input */
+}
+
+/* Submit button styling */
+.btn-submit {
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Adequate padding */
+    font-size: 1.1rem; /* Larger font size */
+    background-color: #1d6bd8; /* Blue color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}

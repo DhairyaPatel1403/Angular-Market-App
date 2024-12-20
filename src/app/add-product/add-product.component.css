@@ -1,0 +1,65 @@
+/* Main container for the form */
+.product-form-container {
+    border: 1px solid #ccc; /* Subtle light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px 30px; /* Padding inside the form */
+    max-width: 400px; /* Form width */
+    margin: 0 auto; /* Center form horizontally */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.input-group-text {
+    width: 150px; /* Fixed width for label section */
+    padding: 10px; /* Adequate padding */
+    font-weight: 600; /* Bold text for the labels */
+    background-color: #f8f9fa; /* Light background for labels */
+    border: 1px solid #ccc; /* Light grey border for input group */
+    border-right: none; /* Remove right border to make it seamless with input */
+}
+
+.form-control {
+    width: 100%; /* Full-width input fields */
+    padding: 10px; /* Padding inside inputs */
+    font-size: 1rem; /* Consistent font size */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded input corners */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: border-color 0.2s ease-in-out; /* Smooth border color change on focus */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Error message styling */
+code {
+    color: #dc3545; /* Red text for error messages */
+    font-size: 0.875rem; /* Smaller font size for error messages */
+    margin-top: 5px; /* Space between error and input */
+    display: block; /* Ensure error messages are displayed below inputs */
+}
+
+/* Submit button styling */
+button.btn-submit {
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Adequate padding */
+    font-size: 1.1rem; /* Slightly larger font size */
+    background-color: #1758a7; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+button.btn-submit:hover {
+    background-color: #984619; /* Darker blue on hover */
+}
+

@@ -1,0 +1,43 @@
+@if(authorized){
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="product-form-container">
+    
+        <div class="input-group">
+            <label for="name" class="form-label">Product Name</label>
+            <input type="text" name="name" id="name" placeholder="Add Product's Name here!" formControlName="name" class="form-control">
+        </div>
+        
+        @if(productForm.controls.name.touched && productForm.controls.name.errors?.['required']){
+            <div class="error-message">
+                <code>*Name is required.</code>
+            </div>
+        }
+        
+        @if(productForm.controls.name.errors?.['maxLength']){
+            <div class="error-message">
+                <code>Name must be less than 50 characters long</code>
+            </div>
+        }
+        
+        <div class="input-group">
+            <label for="price" class="form-label">Product Price</label>
+            <input type="number" name="price" id="price" placeholder="Add Product's Price here!" formControlName="price" class="form-control">
+        </div>
+        
+        @if(productForm.controls.price.touched && productForm.controls.price.errors?.['required']){
+            <div class="error-message">
+                <code>*Price is required.</code>
+            </div>
+        }
+        
+        <button type="submit" class="btn-submit">Add Product</button>
+        
+    </form>
+    
+    
+    @if(addStatus){
+        <code>Your Product is added !</code>
+    }
+}
+@else{
+    <p>You are not authorized to add product</p>
+}

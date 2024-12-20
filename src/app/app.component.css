@@ -1,0 +1,37 @@
+.logout{
+        width: 100%; /* Full-width button */
+        padding: 12px; /* Adequate padding */
+        font-size: 1.1rem; /* Larger font size */
+        background-color: #d85f1d; /* Blue color */
+        color: rgb(0, 0, 0); /* White text */
+        border: none; /* Remove default border */
+        border-radius: 4px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor to indicate it's clickable */
+        transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+
+
+.topnav {
+        background-color: #0f224d;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 0 0 10px 10px;
+        
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #21469b;
+      }

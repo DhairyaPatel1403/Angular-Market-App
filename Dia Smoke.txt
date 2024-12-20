@@ -1,0 +1,46 @@
+.Domain - Database Details
+.Services - Functions related to it.
+
+
+
+
+CRUD - Dto, Model, Automapper,AppDbContext,Startup.cs
+
+Angular - Form and dto work
+
+expression - what someone does rather than doing, for later purposes
+	   - Syntax - <whatgoes, whatreturns>
+
+
+Product and ProductDto just used here
+
+Similarly create other model with similar 2 entities. Then create AutoMapper. Then in DBService, make [objectName]Service.cs for operations
+
+
+
+
+migrate -  dotnet ef migrations add MyNewMigrationName --project ./ConfidoSoft.Data.Domain/ConfidoSoft.Data.Domain.csproj --startup-project ./CSDiaSmokeAPI/CSDiaSmokeAPI.csproj
+
+
+
+update migrate - dotnet ef database update --project ./ConfidoSoft.Data.Domain/ContefidoSoft.Data.Domain.csproj --startup-project ./CSDiaSmokeAPI/CSDiaSmokeAPI.csproj
+
+
+
+
+Firewall changes -Windows Firewall (if you're using Windows):
+
+    Open Control Panel and go to Windows Defender Firewall.
+    Click on Advanced Settings in the left menu.
+    Select Inbound Rules, then click New Rule.
+    Choose Port and click Next.
+    Select TCP, then specify port 5432 and click Next.
+    Allow the connection and specify when to apply the rule (Domain, Private, Public).
+    Give the rule a name, such as "PostgreSQL Port 5432", and click Finish.
+
+
+
+
+
+test123
+admin@confidosoft.com

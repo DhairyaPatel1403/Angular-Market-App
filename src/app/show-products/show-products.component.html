@@ -1,0 +1,29 @@
+@if(authorized){
+    <br>
+    <div class="header">
+        Set Your Range Here - 
+        <input class="rangeI" [(ngModel)]="minPrice">
+        <input class="rangeI" [(ngModel)]="maxPrice">
+        <button class="search-btn" (click)="rangeSearch()">Search</button>
+    </div>
+
+    <div [ngStyle]="{'justify-content': 'end', 'border':'1px solid black', 'padding':'5px', 'max-width':'fit-content'}">
+        Items in Your Cart 
+        <p class="cart">{{cart}}</p>
+    </div>
+    
+    <div class="product-container">
+        @for(product of products; track product){
+            <div class="card">
+                <h1>{{product.name}}</h1>
+                <p class="price">{{ product.price }}</p>
+                <p><button (click)="addToCart()">Add to Cart</button></p>
+            </div>
+        }
+    </div>
+    
+
+}
+@else{
+    <p><a href="">Login</a> Again To Validate</p>
+}
