@@ -42,5 +42,5 @@ Firewall changes -Windows Firewall (if you're using Windows):
 
 
 
-test123
+Test@123
 admin@confidosoft.com
